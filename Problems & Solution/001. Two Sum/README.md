@@ -151,46 +151,45 @@ function twoSum(nums, target) {
 
 ## 📚 References
 
-### Hash table data structure
-- A hash table is a data structure that implements an associative array or dictionary. It is an abstract data type that maps keys to values¹.
-- A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found¹.
-- A hash table is a data structure that is used to store key/value pairs. It uses a hash function to compute an index into an array in which an element will be inserted or searched. By using a good hash function, hashing can work well. Under reasonable assumptions, the average time required to search for an element in a hash table is O(1)⁵.
 
-### When and why we use hash table
-- We use hash table when we want to perform fast and efficient operations on a large amount of data, such as searching, inserting, deleting, or updating².
-- We use hash table because it offers the following advantages²:
-  - It can reduce the time complexity of searching from O(n) to O(1) on average, where n is the number of elements in the data set.
+### What is a hash table?
+- A hash table is a way of storing and finding data using keys and values. 
+- A key is something that identifies the data, like a name or a word. A value is the data itself, like a phone number or a definition. 
+- For example, if you have a dictionary of words and their meanings, you can use a hash table to store them and find them quickly.
+
+### Why use a hash table?
+- We use a hash table when we want to perform fast and efficient operations on a large amount of data, such as searching, inserting, deleting, or updating.
+- We use a hash table because it can reduce the time complexity of searching from O(n) to O(1) on average, where n is the number of elements in the data set.
+- This means that we can find the value for any key in constant time, regardless of how many elements are in the data set.
+
+### How does a hash table work?
+- A hash table uses an array to store the values. An array is a way of storing data in order using numbers. 
+- For example, if you have an array of size 10, you can store 10 values in it using numbers from 0 to 9. The number is called an index or a position.
+- A hash table also uses a hash function to find the index for each key. A hash function is a way of turning a key into a number. 
+- For example, if you have a word "cat", you can use a hash function to turn it into a number like 3. The number is called a hash code or an index.
+- To store the value for a key, you can use the hash function to find the index for the key, and then store the value in the array at that index. 
+- For example, if you have a word "cat" and its meaning "a small furry animal", you can use the hash function to turn "cat" into 3, and then store "a small furry animal" in the array at index 3.
+- To find the value for a key, you can use the same hash function to find the index for the key, and then look at the array at that index. 
+- For example, if you want to find the meaning for "cat", you can use the hash function to turn "cat" into 3, and then look at the array at index 3 to get "a small furry animal".
+
+### What are some advantages and disadvantages of using a hash table?
+- Some advantages of using a hash table are:
+  - It can perform fast and efficient operations on large data sets.
   - It can store any type of data as keys and values, such as numbers, strings, objects, etc.
   - It can handle dynamic resizing of the data set without affecting the performance significantly.
-
-### Two-pass hash table
-- A two-pass hash table is a technique to solve problems where we need to find two elements in an array that satisfy some condition, such as adding up to a target value³.
-- A two-pass hash table works as follows³:
-  - In the first pass, we iterate over the array and add each element's value as a key and its index as a value to the hash table.
-  - In the second pass, we iterate over the array again and for each element, we check if its complement (the value that satisfies the condition with the current element) exists in the hash table. If it does exist, we return the current element's index and its complement's index as a solution.
-- A two-pass hash table has the following advantages and disadvantages³:
-  - Advantages:
-    - It is easy to implement and understand.
-    - It has a linear time complexity of O(n), where n is the length of the array.
-    - It can handle negative numbers and duplicates in the array.
-  - Disadvantages:
-    - It requires extra space of O(n) to store the elements in the hash table.
-    - It requires two iterations over the array, which can be inefficient for large data sets.
-
-### One-pass hash table
-- A one-pass hash table is a technique to solve problems where we need to find two elements in an array that satisfy some condition, such as adding up to a target value⁴.
-- A one-pass hash table works as follows⁴:
+- Some disadvantages of using a hash table are:
+  - It requires extra space to store the elements in the array and the hash function.
+  - It can have collisions when two different keys have the same index. This can make it hard to find the right value for a key.
+  - It can be difficult to choose a good hash function that minimizes collisions and distributes the keys evenly in the array.
+### One pass and two pass hash table
+- One pass and two pass hash table are techniques to solve problems where we need to find two elements in an array that satisfy some condition, such as adding up to a target value.
+- One pass hash table works as follows:
   - In one pass, we iterate over the array and for each element, we check if its complement (the value that satisfies the condition with the current element) exists in the hash table. If it does exist, we return the current element's index and its complement's index as a solution.
   - If the complement does not exist, we add the current element's value as a key and its index as a value to the hash table.
-- A one-pass hash table has the following advantages and disadvantages⁴:
-  - Advantages:
-    - It has a linear time complexity of O(n), where n is the length of the array.
-    - It requires only one iteration over the array, which can be more efficient for large data sets.
-    - It can handle negative numbers and duplicates in the array.
-  - Disadvantages:
-    - It requires extra space of O(n) to store the elements in the hash table.
-    - It can be more difficult to implement and understand than a two-pass hash table.
-
+- Two pass hash table works as follows:
+  - In the first pass, we iterate over the array and add each element's value as a key and its index as a value to the hash table.
+  - In the second pass, we iterate over the array again and for each element, we check if its complement (the value that satisfies the condition with the current element) exists in the hash table. If it does exist, we return the current element's index and its complement's index as a solution.
+  
 ## ⌛ Time Taken To Solve(mine)
 
 - [ ] Less than 10 minutes
