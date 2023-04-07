@@ -1,2 +1,1 @@
-# leetcode_2023
-Hard Challange ( 4th Time Practice On ⚡)
+By adding a day of continuous effort and persistence, you will become a good coder who is not afraid of anything. Fail, try and repeat until you achieve your goal. Your daily effort makes you stronger and closer to success.”
