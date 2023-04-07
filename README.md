@@ -1,1 +1,1 @@
-By adding a day of continuous effort and persistence, you will become a good coder who is not afraid of anything. Fail, try and repeat until you achieve your goal. Your daily effort makes you stronger and closer to success.”
+> Success in coding is a journey, not a destination. It is achieved through persistent daily effort, trying, failing, and repeating.
